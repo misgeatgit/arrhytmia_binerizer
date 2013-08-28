@@ -1,0 +1,8 @@
+!$A12 
+or(and($A52 $A611) and($A52 $A614) $A69 $A74) 
+or(and($A52 $A614) $A69 $A74) 
+or(and($A52 $A614) and($A69 !$A610) $A74) 
+or(and($A52 $A614) and(!$A614 $A74) $A69) 
+or(and($A52 $A614) and($A74 !$A78) $A69) 
+or(and($A52 $A611) $A69 $A74) 
+true 

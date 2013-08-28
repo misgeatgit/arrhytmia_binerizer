@@ -1,0 +1,94 @@
+[INFO] Using config file found at: 
+[2013-05-24 07:47:19:506] [INFO] moses version 3.6.5 (git-describe moses-3.2.13-15-Nov-2012-752-gdaadcc0)
+[2013-05-24 07:47:19:507] [INFO] Command line: moses --enable-fs=1 -S0 -f ./mout/preparedCrx/FOLD1/FOLD1.moses.log -c 500 -W1 -i ./mout/preparedCrx/FOLD1/FOLD1.train
+[2013-05-24 07:47:19:507] [INFO] hostname: Addis-AI-Lab-5
+[2013-05-24 07:47:19:507] [INFO] Read data file ./mout/preparedCrx/FOLD1/FOLD1.train
+[2013-05-24 07:47:19:517] [INFO] Number of rows in tables = 243
+[2013-05-24 07:47:19:517] [INFO] Inferred arity = 47
+[2013-05-24 07:47:19:517] [INFO] Inferred data signature ->(boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean boolean) 
+[2013-05-24 07:47:19:517] [INFO] Inferred output type: boolean
+[2013-05-24 07:47:19:517] [INFO] Alphabet size = 50 output = boolean
+[2013-05-24 07:47:19:517] [INFO] BScore complexity ratio = 3.5
+[2013-05-24 07:47:19:517] [INFO] Inferred target score = 0
+[2013-05-24 07:47:19:517] [INFO] Subtract 0.5 (minimum significant improvement) from the target score to deal with float imprecision = -0.5
+[2013-05-24 07:47:19:517] [INFO] Cache composite scores
+[2013-05-24 07:47:19:519] [INFO] MOSES starts, max_evals=10000 max_gens=-1 max_time=2147483647
+[2013-05-24 07:47:19:519] [INFO] Stats: # 
+Stats: # Stats are tab-separated, ready for graphing.
+Stats: # You can also use the script parse_log.py to extract a CSV file given a moses log file.
+Column explanation:
+Stats: # 
+Stats: # gen is the generation number.
+Stats: # num_evals is the number of scoring function evaluations so far.
+Stats: # elapsed is the wall-clock time, in seconds, since start.
+Stats: # metapop_size is the size of the metapopulation.
+Stats: # best_score is the highest raw score seen, of all exemplars.
+Stats: # complexity is in bits, of the highest-composite score exemplar.
+Stats: # field_set_size is the ESTIMATED number of bits in all the knobs.
+Stats: # optim_steps is the number of steps the optimizer took.
+Stats: # over_budget is bool, T if search exceeded scoring func eval budget.
+Stats: # 
+Stats: # gen	num_evals	elapsed	metapop_size	best_score	complexity	field_set_size	optim_steps	over_budget
+[2013-05-24 07:47:19:524] [INFO] Number of demes selected: 1
+[2013-05-24 07:47:19:524] [INFO] Feature-selection deme population size = 1
+[2013-05-24 07:47:19:524] [INFO] Breadth-first deme expansion : 1/1
+[2013-05-24 07:47:19:524] [INFO] Selected 20 features for representation building
+[2013-05-24 07:47:19:524] [INFO] Of these, 0 are already in the exemplar, and 20 are new.
+[2013-05-24 07:47:19:524] [INFO] Selected features which are in the exemplar: 
+[2013-05-24 07:47:19:524] [INFO] Selected features which are new: A52,A53,A61,A62,A67,A68,A69,A610,A611,A612,A613,A614,A71,A72,A73,A74,A75,A76,A77,A78
+[2013-05-24 07:47:19:524] [INFO] Start knob building, rep size=1 complexity=0
+[2013-05-24 07:47:19:539] [INFO] After knob building, rep size=484 complexity=0
+[2013-05-24 07:47:19:539] [INFO] Total number of field specs: 160
+[2013-05-24 07:47:19:539] [INFO] Number of disc knobs mapped: 160
+[2013-05-24 07:47:19:539] [INFO] Number of contin knobs mapped: 0
+[2013-05-24 07:47:19:539] [INFO] Field set, in bytes: 4704
+[2013-05-24 07:47:19:539] [INFO] One instance, in bytes: 64
+[2013-05-24 07:47:19:539] [INFO] Inferred target score for that deme = 0
+[2013-05-24 07:47:19:539] [INFO] Subtract 0.5 (minimum significant improvement) from the target score to deal with float imprecision = -0.5
+[2013-05-24 07:47:19:539] [INFO] Demes: # deme_count	iteration	total_steps	total_evals	microseconds	new_instances	num_instances	inst_RAM	num_evals	has_improved	best_weighted_score	delta_weighted	best_raw	delta_raw	complexity
+[2013-05-24 07:47:19:539] [INFO] Demes: 1	1	1	1	43	1	1	6.10352e-05	1	1	-165	3.40282e+38	-165	3.40282e+38	0
+[2013-05-24 07:47:19:553] [INFO] Demes: 1	2	2	321	14141	320	321	0.0195923	321	1	-66.2857	98.7143	-66	99	1
+[2013-05-24 07:47:19:560] [INFO] Demes: 1	3	3	441	6933	120	441	0.0269165	441	1	-64.5714	1.71429	-64	2	2
+[2013-05-24 07:47:19:568] [INFO] Demes: 1	4	4	561	8106	120	561	0.0342407	561	0	-64.1429	0.428566	-63	1	4
+[2013-05-24 07:47:19:572] [INFO] Expansion 1 done
+[2013-05-24 07:47:19:572] [INFO] Total number of evaluations so far: 561
+[2013-05-24 07:47:19:572] [INFO] The following candidate(s) have the best score [score=-63, complexity=4, complexity penalty=1.14285719394683837890625, diversity penalty=0]
+[2013-05-24 07:47:19:572] [INFO] or(and($9 $24) $19 $28) 
+[2013-05-24 07:47:19:572] [INFO] Stats: 1	561	0	5	-63	4	0	4	0
+[2013-05-24 07:47:19:573] [INFO] Number of demes selected: 1
+[2013-05-24 07:47:19:573] [INFO] Feature-selection deme population size = 1
+[2013-05-24 07:47:19:573] [INFO] Breadth-first deme expansion : 1/1
+[2013-05-24 07:47:19:573] [INFO] Selected 24 features for representation building
+[2013-05-24 07:47:19:573] [INFO] Of these, 2 are already in the exemplar, and 22 are new.
+[2013-05-24 07:47:19:573] [INFO] Selected features which are in the exemplar: A52,A69
+[2013-05-24 07:47:19:573] [INFO] Selected features which are new: A12,A41,A42,A51,A61,A63,A64,A65,A66,A67,A610,A611,A612,A613,A72,A73,A76,A78,A81,A91,A92,A141
+[2013-05-24 07:47:19:573] [INFO] Start knob building, rep size=6 complexity=4
+[2013-05-24 07:47:19:677] [INFO] After knob building, rep size=1116 complexity=4
+[2013-05-24 07:47:19:677] [INFO] Total number of field specs: 370
+[2013-05-24 07:47:19:677] [INFO] Number of disc knobs mapped: 370
+[2013-05-24 07:47:19:677] [INFO] Number of contin knobs mapped: 0
+[2013-05-24 07:47:19:677] [INFO] Field set, in bytes: 10584
+[2013-05-24 07:47:19:677] [INFO] One instance, in bytes: 120
+[2013-05-24 07:47:19:678] [INFO] Inferred target score for that deme = 0
+[2013-05-24 07:47:19:678] [INFO] Subtract 0.5 (minimum significant improvement) from the target score to deal with float imprecision = -0.5
+[2013-05-24 07:47:19:678] [INFO] Demes: # deme_count	iteration	total_steps	total_evals	microseconds	new_instances	num_instances	inst_RAM	num_evals	has_improved	best_weighted_score	delta_weighted	best_raw	delta_raw	complexity
+[2013-05-24 07:47:19:678] [INFO] Demes: 2	1	5	562	129	1	1	0.000114441	1	1	-64.1429	3.40282e+38	-63	3.40282e+38	4
+[2013-05-24 07:47:19:797] [INFO] Demes: 2	2	6	1277	119304	715	716	0.0819397	716	1	-18.4286	45.7143	-17	46	5
+[2013-05-24 07:47:19:817] [INFO] Demes: 2	3	7	1397	20126	120	836	0.0956726	836	1	-0.285714	18.1429	0	17	1
+[2013-05-24 07:47:19:820] [INFO] Expansion 2 done
+[2013-05-24 07:47:19:820] [INFO] Total number of evaluations so far: 1397
+[2013-05-24 07:47:19:820] [INFO] The following candidate(s) have the best score [score=0, complexity=1, complexity penalty=0.2857142984867095947265625, diversity penalty=0]
+[2013-05-24 07:47:19:820] [INFO] !$1 
+[2013-05-24 07:47:19:820] [INFO] Stats: 2	1397	0	8	0	1	0	3	0
+[2013-05-24 07:47:19:820] [INFO] MOSES ends
+[2013-05-24 07:47:19:820] [INFO] Best candidates:
+!$A12 
+or(and($A52 $A614) !$A12 $A74) 
+or(and($A52 $A614) !$A12 $A65 $A74) 
+or(and($A52 $A614) $A69 $A74) 
+or($A69 $A74) 
+or(and($A69 !$A610) $A74) 
+or(and($A52 $A614) $A69) 
+true 
+
+[2013-05-24 07:47:19:821] [INFO] Cache composite scores hits=541 misses=857

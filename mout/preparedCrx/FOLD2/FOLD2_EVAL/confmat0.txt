@@ -1,0 +1,11 @@
+True_negative:3
+False_positive:1
+False_negative:18
+True_positive:5
+
+True_nagative rate:0.75
+False_positive rate:0.25
+False_negative rate0.7826087
+True_positve rate:0.2173913
+Accuracy0.2962963
+Precision0.8333333
