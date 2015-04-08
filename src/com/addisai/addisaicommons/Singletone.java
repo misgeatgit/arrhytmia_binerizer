@@ -8,19 +8,19 @@ package com.addisai.addisaicommons;
  *
  * @author Misgana Bayetta <misgana.bayetta@gmail.com>
  */
-public class Gingleton {
-    private static Gingleton INSTANCE = null;
+public class Singletone {
+    private static Singletone INSTANCE = null;
 
-    public static Gingleton getInstance()
+    public static Singletone getInstance()
     {
         if ( INSTANCE == null )
         {
-            INSTANCE = new Gingleton();
+            INSTANCE = new Singletone();
         }
         return INSTANCE;
     }
 
-    private Gingleton() {
+    private Singletone() {
     }
     public boolean isConfusing() {
    try {
@@ -30,7 +30,7 @@ public class Gingleton {
    }
 }
     public static void main(String[] args) {
-        Gingleton gt=new Gingleton();
-        System.out.println(gt.isConfusing());
+        Singletone st=new Singletone();
+        System.out.println(st.isConfusing());
     }
 }
